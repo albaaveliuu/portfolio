@@ -23,8 +23,8 @@ const Contact: React.FC = () => {
 
     try {
       const result = await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_lkknqf8',
+        'template_auto_reply',
         {
           from_name: formState.name,
           from_email: formState.email,
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
           message: formState.message,
           to_email: 'albenitaveliuu@gmail.com',
         },
-        'YOUR_PUBLIC_KEY'
+        'uKfBC5aQwy-EynMiI'
       );
 
       if (result.text === 'OK') {
