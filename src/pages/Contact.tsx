@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
                 <FaGithub /> GitHub
               </motion.a>
               <motion.a 
-                href="https://linkedin.com/in/albaveliu"
+                href="https://www.linkedin.com/in/albaveliuu"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}

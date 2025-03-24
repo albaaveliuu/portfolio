@@ -80,34 +80,53 @@ const Home: React.FC = () => {
 
       <motion.div
         className="about-section"
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
       >
         <motion.h2
-          initial={{ x: -20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 1.2 }}
         >
-          About Me
+          Creative Soul & Digital Artist
         </motion.h2>
-        <motion.div
+        <motion.div 
           className="about-content"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.4 }}
         >
           <p>
-            Hello! I'm Albenita Veliu, a creative professional passionate about bringing ideas to life through design and code. 
-            With expertise in graphic design, web development, and 2D animation, I create engaging digital experiences that 
-            combine aesthetic beauty with functional excellence.
+            Welcome to my creative universe! I'm a passionate digital artist who transforms ideas into 
+            stunning visual experiences. With a unique blend of artistic vision and technical expertise, 
+            I create digital masterpieces that leave lasting impressions.
           </p>
-          <div className="skills">
-            <motion.span whileHover={{ scale: 1.1 }} className="skill-tag">Graphic Design</motion.span>
-            <motion.span whileHover={{ scale: 1.1 }} className="skill-tag">Web Development</motion.span>
-            <motion.span whileHover={{ scale: 1.1 }} className="skill-tag">2D Animation</motion.span>
-            <motion.span whileHover={{ scale: 1.1 }} className="skill-tag">UI/UX Design</motion.span>
-            <motion.span whileHover={{ scale: 1.1 }} className="skill-tag">Creative Coding</motion.span>
+          <div className="creative-highlights">
+            <motion.div 
+              className="highlight"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <span className="emoji">🎨</span>
+              <p>Bridging Art & Technology</p>
+            </motion.div>
+            <motion.div 
+              className="highlight"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <span className="emoji">✨</span>
+              <p>Creating Digital Magic</p>
+            </motion.div>
+            <motion.div 
+              className="highlight"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <span className="emoji">🚀</span>
+              <p>Innovative Solutions</p>
+            </motion.div>
           </div>
         </motion.div>
       </motion.div>
