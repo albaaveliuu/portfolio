@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none !important;
 }
 
 body {
@@ -24,6 +25,14 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  cursor: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
@@ -36,10 +45,16 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: none !important;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 button {
-  cursor: pointer;
+  cursor: none !important;
   border: none;
   outline: none;
   font-family: inherit;
@@ -121,6 +136,9 @@ img {
   .portfolio-item {
     background: var(--card-background);
     border: 1px solid var(--border-color);
+    cursor: none !important;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
     &:hover {
       transform: translateY(-10px);
       box-shadow: 0 10px 20px var(--shadow-color);
@@ -141,9 +159,22 @@ img {
     button {
       background: var(--primary-color);
       color: var(--secondary-color);
+      cursor: none !important;
       &:hover {
         background: var(--hover-color);
       }
     }
+  }
+}
+
+button,
+a,
+.portfolio-item,
+.contact-button {
+  cursor: none !important;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
   }
 } 

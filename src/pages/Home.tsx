@@ -4,6 +4,7 @@ import { OrbitControls, Float, Text3D, Stars } from '@react-three/drei';
 import { motion } from 'framer-motion';
 import '../styles/Home.scss';
 import profileImage from '../images/albenita.png';
+import aboutMeImage from '../images/aboutMe.jpeg';
 
 const FloatingText = () => {
   return (
@@ -68,10 +69,19 @@ const Home: React.FC = () => {
           >
             <img src={profileImage} alt="Albenita Veliu" />
           </motion.div>
-          <motion.p
+          <motion.h1
+            className="name"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
+          >
+            Albenita Veliu
+          </motion.h1>
+          <motion.p
+            className="title"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
           >
             Graphic Web Designer • 2D Animator • Web Developer
           </motion.p>
@@ -89,7 +99,7 @@ const Home: React.FC = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, delay: 1.2 }}
         >
-          Creative Soul & Digital Artist
+          About Me
         </motion.h2>
         <motion.div 
           className="about-content"
@@ -97,35 +107,41 @@ const Home: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.4 }}
         >
-          <p>
-            Welcome to my creative universe! I'm a passionate digital artist who transforms ideas into 
-            stunning visual experiences. With a unique blend of artistic vision and technical expertise, 
-            I create digital masterpieces that leave lasting impressions.
-          </p>
-          <div className="creative-highlights">
+          <div className="about-grid">
+            <div className="about-text">
+              <p>
+                I'm a creative professional who combines design, animation, and development 
+                to create engaging digital experiences. With a focus on clean aesthetics and 
+                intuitive functionality, I bring ideas to life through thoughtful design and 
+                precise execution.
+              </p>
+              <p className="interests">
+                When I'm not crafting digital experiences, you can find me playing guitar and singing. 
+                Music is another form of creative expression that I deeply enjoy, allowing me to 
+                explore different melodies and harmonies in my free time.
+              </p>
+              <div className="skills">
+                <div className="skill-category">
+                  <h3>Design</h3>
+                  <p>UI/UX Design, Brand Identity, Visual Design</p>
+                </div>
+                <div className="skill-category">
+                  <h3>Animation</h3>
+                  <p>2D Animation, Motion Graphics, Character Design</p>
+                </div>
+                <div className="skill-category">
+                  <h3>Development</h3>
+                  <p>Web Development, Interactive Experiences, Responsive Design</p>
+                </div>
+              </div>
+            </div>
             <motion.div 
-              className="highlight"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              className="about-image"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 1.6 }}
             >
-              <span className="emoji">🎨</span>
-              <p>Bridging Art & Technology</p>
-            </motion.div>
-            <motion.div 
-              className="highlight"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <span className="emoji">✨</span>
-              <p>Creating Digital Magic</p>
-            </motion.div>
-            <motion.div 
-              className="highlight"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <span className="emoji">🚀</span>
-              <p>Innovative Solutions</p>
+              <img src={aboutMeImage} alt="About Albenita" />
             </motion.div>
           </div>
         </motion.div>

@@ -4,6 +4,7 @@
   background: #000000;
   position: relative;
   overflow: hidden;
+  margin-top: 2rem;
 
   &::before {
     content: '';
@@ -40,6 +41,7 @@
       display: inline-block;
       left: 50%;
       transform: translateX(-50%);
+      margin-top: 2rem;
 
       &::after {
         content: '';
