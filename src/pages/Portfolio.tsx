@@ -27,10 +27,10 @@ const Portfolio: React.FC = () => {
   const portfolioItems: PortfolioItem[] = [
     {
       id: 1,
-      title: 'Grand Hotel Web Design',
+      title: 'Grand Hotel',
       category: 'design',
       image: '/src/images/grandhotel/thumbnail.jpg',
-      description: 'Modern and elegant web design for Grand Hotel, featuring a responsive layout and immersive user experience.',
+      description: 'A comprehensive branding project for Grand Hotel, including logo design, visual identity, and marketing materials.',
       hasGallery: true,
       galleryImages: [
         '/src/images/grandhotel/Home-100.jpg',
@@ -84,6 +84,7 @@ const Portfolio: React.FC = () => {
       id: 4,
       title: 'Landing Page Animation',
       category: 'animation',
+      image: '/src/animation/landingPageAnimation.mp4',
       description: 'A dynamic landing page animation showcasing smooth transitions and engaging user interactions.',
       hasVideo: true,
       videoUrl: '/src/animation/landingPageAnimation.mp4',
@@ -93,6 +94,7 @@ const Portfolio: React.FC = () => {
       id: 5,
       title: 'Morsix Dashboard Animation',
       category: 'animation',
+      image: '/src/animation/Morsix Dashboard Animation.mp4',
       description: 'Interactive dashboard animation demonstrating data visualization and user interface transitions.',
       hasVideo: true,
       videoUrl: '/src/animation/Morsix Dashboard Animation.mp4',
@@ -102,6 +104,7 @@ const Portfolio: React.FC = () => {
       id: 6,
       title: 'Shwabo Commercial',
       category: 'animation',
+      image: '/src/animation/Shwabo - Trinken sie shwabo.mp4',
       description: 'Creative commercial animation for Shwabo, featuring engaging visuals and brand storytelling.',
       hasVideo: true,
       videoUrl: '/src/animation/Shwabo - Trinken sie shwabo.mp4',
@@ -111,10 +114,60 @@ const Portfolio: React.FC = () => {
       id: 7,
       title: 'Media Awareness Campaign',
       category: 'animation',
+      image: '/src/animation/Titulli nuk eshte lajm! Fushate vetedijesuese ndaj keqinformimit te mediave dhe lajmeve te rreme..mp4',
       description: 'Educational animation campaign about media misinformation and fake news awareness.',
       hasVideo: true,
       videoUrl: '/src/animation/Titulli nuk eshte lajm! Fushate vetedijesuese ndaj keqinformimit te mediave dhe lajmeve te rreme..mp4',
       technologies: ['After Effects', 'Educational Animation', 'Motion Graphics']
+    },
+    {
+      id: 8,
+      title: 'Birra Peroni - Pa Panik Plako!',
+      category: 'animation',
+      image: '/src/animation/Birra Peroni - Pa Panik Plako!.mp4',
+      hasVideo: true,
+      videoUrl: '/src/animation/Birra Peroni - Pa Panik Plako!.mp4',
+      description: 'A dynamic animation for Birra Peroni\'s campaign, featuring the tagline \'Pa Panik Plako!\' with energetic motion graphics and brand elements.',
+      technologies: ['After Effects', 'Motion Graphics', 'Brand Animation']
+    },
+    {
+      id: 9,
+      title: 'Ambasada Gjermane - Tage der Deutschen Sprache',
+      category: 'animation',
+      image: '/src/animation/Animacioni për Ambasadën Gjermane - Tage der Deutschen Sprache Logo Animation.mp4',
+      hasVideo: true,
+      videoUrl: '/src/animation/Animacioni për Ambasadën Gjermane - Tage der Deutschen Sprache Logo Animation.mp4',
+      description: 'Logo animation for the German Embassy\'s language days event, showcasing elegant typography and cultural elements.',
+      technologies: ['After Effects', 'Motion Graphics', 'Logo Design']
+    },
+    {
+      id: 10,
+      title: 'Political Campaign Prishtina',
+      category: 'design',
+      image: '/src/images/politicalCampaignPrishtina/thumbnailElection.png',
+      description: 'Political campaign materials for Prishtina, including posters, social media content, and promotional materials.',
+      hasGallery: true,
+      galleryImages: [
+        '/src/images/politicalCampaignPrishtina/thumbnailElection.png',
+        '/src/images/politicalCampaignPrishtina/02.png',
+        '/src/images/politicalCampaignPrishtina/03.png',
+        '/src/images/politicalCampaignPrishtina/stickers04.png'
+      ],
+      technologies: ['Poster Design', 'Social Media', 'Promotional Materials']
+    },
+    {
+      id: 11,
+      title: 'Product Campaign',
+      category: 'design',
+      image: '/src/images/productCampaign/thumbnailProduct.png',
+      description: 'Product campaign design featuring creative visuals and marketing materials.',
+      hasGallery: true,
+      galleryImages: [
+        '/src/images/productCampaign/thumbnailProduct.png',
+        '/src/images/productCampaign/02.png',
+        '/src/images/productCampaign/03.png'
+      ],
+      technologies: ['Product Design', 'Marketing', 'Brand Strategy']
     }
   ];
 
