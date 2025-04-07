@@ -6,17 +6,20 @@ interface ImageGalleryProps {
   isOpen: boolean;
   onClose: () => void;
   images: string[];
+  title?: string;
+  description?: string;
+  isVideo?: boolean;
 }
 
-const ImageGallery: React.FC<ImageGalleryProps> = ({ isOpen, onClose, images }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const ImageGallery: React.FC<ImageGalleryProps> = ({ isOpen, onClose, images, title = "Tage der Deutschen Sprache", description, isVideo }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
   if (!isOpen) return null;
@@ -36,22 +39,39 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ isOpen, onClose, images }) 
         exit={{ scale: 0.8, opacity: 0 }}
         onClick={(e) => e.stopPropagation()}
       >
+        <div className="gallery-title">
+          <h2>{title || 'Gallery'}</h2>
+          {description && <p>{description}</p>}
+        </div>
         <button className="close-button" onClick={onClose}>&times;</button>
         
         <div className="gallery-navigation">
           <button className="nav-button prev" onClick={handlePrev}>&#8592;</button>
           <motion.div className="image-container">
-            <motion.img
-              key={currentImageIndex}
-              src={images[currentImageIndex]}
-              alt={`Gallery image ${currentImageIndex + 1}`}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.3 }}
-            />
+            {isVideo ? (
+              <motion.video
+                key={currentIndex}
+                src={images[currentIndex]}
+                controls
+                autoPlay
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.3 }}
+              />
+            ) : (
+              <motion.img
+                key={currentIndex}
+                src={images[currentIndex]}
+                alt={`Gallery image ${currentIndex + 1}`}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.3 }}
+              />
+            )}
             <div className="image-counter">
-              {currentImageIndex + 1} / {images.length}
+              {currentIndex + 1} / {images.length}
             </div>
           </motion.div>
           <button className="nav-button next" onClick={handleNext}>&#8594;</button>
