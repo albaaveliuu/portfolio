@@ -4,6 +4,68 @@ import ImageGallery from '../components/ImageGallery';
 import VideoPlayer from '../components/VideoPlayer';
 import '../styles/Portfolio.scss';
 
+// Import images
+import csgdLogo from '../images/csgd/LogoDesign.jpg';
+import csgdLogoPng from '../images/csgd/logo.png';
+import csgdLogoIcon from '../images/csgd/logoIcon.png';
+import csgdColors from '../images/csgd/differentColors.png';
+import csgdFlag from '../images/csgd/flagMockup.png';
+import csgdGlass from '../images/csgd/glassMockup.png';
+import csgdNotebook from '../images/csgd/notebookMockup.png';
+import csgdTotebag from '../images/csgd/totebagMockup.png';
+
+import mileniumiLogo from '../images/mileniumi/logoFinal.png';
+import mileniumiConstruction from '../images/mileniumi/logoConstruction.png';
+import mileniumiNotebook from '../images/mileniumi/logoMockupNotebook.png';
+import mileniumiWatch from '../images/mileniumi/watchLogoMockup.png';
+
+import blinkWhite from '../images/blink/logoWhite.jpg';
+import blinkBlack from '../images/blink/logoBlack.jpg';
+import blinkIcon from '../images/blink/icon.jpg';
+import blinkCards from '../images/blink/visitcards.jpg';
+
+import gprojectLogo from '../images/gproject/logo.png';
+import gprojectRed from '../images/gproject/redlogo.jpg';
+import gprojectImg from '../images/gproject/IMG_1152.jpeg';
+
+import gabePage1 from '../images/gabenunez/page1.jpg';
+import gabePage2 from '../images/gabenunez/page2.jpg';
+import gabePage3 from '../images/gabenunez/page3.jpg';
+
+import ipaymerLogo from '../images/ipaymer/ipaymer.png';
+import ipaymer01 from '../images/ipaymer/ipaymer01.png';
+import ipaymer02 from '../images/ipaymer/ipaymer02.png';
+import ipaymer03 from '../images/ipaymer/ipaymer03.png';
+import ipaymerPage1 from '../images/ipaymer/page1.png';
+
+import grandHotelThumb from '../images/grandhotel/thumbnail.jpg';
+import grandHotelHome from '../images/grandhotel/Home-100.jpg';
+import grandHotel5 from '../images/grandhotel/5-100.jpg';
+import grandHotel6 from '../images/grandhotel/6-100.jpg';
+import grandHotel7 from '../images/grandhotel/7-100.jpg';
+import grandHotel8 from '../images/grandhotel/8-100.jpg';
+import grandHotel9 from '../images/grandhotel/9-100.jpg';
+import grandHotel10 from '../images/grandhotel/10-100.jpg';
+import grandHotelProjects from '../images/grandhotel/Projects-100.jpg';
+import grandHotelStudio from '../images/grandhotel/Studio          -100.jpg';
+import grandHotelWhat from '../images/grandhotel/What we do-100.jpg';
+
+import politicalThumb from '../images/politicalCampaignPrishtina/thumbnailElection.png';
+import political02 from '../images/politicalCampaignPrishtina/02.png';
+import political03 from '../images/politicalCampaignPrishtina/03.png';
+import politicalStickers from '../images/politicalCampaignPrishtina/stickers04.png';
+
+import productThumb from '../images/productCampaign/thumbnailProduct.png';
+import product02 from '../images/productCampaign/02.png';
+import product03 from '../images/productCampaign/03.png';
+
+// Import videos
+import morsixVideo from '../animation/Morsix Dashboard Animation.mp4';
+import shwaboVideo from '../animation/Shwabo - Trinken sie shwabo.mp4';
+import mediaAwarenessVideo from '../animation/Titulli nuk eshte lajm! Fushate vetedijesuese ndaj keqinformimit te mediave dhe lajmeve te rreme..mp4';
+import peroniVideo from '../animation/Birra Peroni - Pa Panik Plako!.mp4';
+import germanEmbassyVideo from '../animation/Animacioni për Ambasadën Gjermane - Tage der Deutschen Sprache Logo Animation.mp4';
+
 interface PortfolioItem {
   id: number;
   title: string;
@@ -31,18 +93,18 @@ const Portfolio: React.FC = () => {
       id: 1,
       title: 'CSGD Brand Books & Logo',
       category: 'design',
-      image: '/src/images/csgd/LogoDesign.jpg',
+      image: csgdLogo,
       description: 'Comprehensive brand identity design including logo creation and brand guidelines for CSGD.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/csgd/LogoDesign.jpg',
-        '/src/images/csgd/logo.png',
-        '/src/images/csgd/logoIcon.png',
-        '/src/images/csgd/differentColors.png',
-        '/src/images/csgd/flagMockup.png',
-        '/src/images/csgd/glassMockup.png',
-        '/src/images/csgd/notebookMockup.png',
-        '/src/images/csgd/totebagMockup.png'
+        csgdLogo,
+        csgdLogoPng,
+        csgdLogoIcon,
+        csgdColors,
+        csgdFlag,
+        csgdGlass,
+        csgdNotebook,
+        csgdTotebag
       ],
       technologies: ['Adobe Illustrator', 'Adobe InDesign', 'Brand Guidelines']
     },
@@ -50,14 +112,14 @@ const Portfolio: React.FC = () => {
       id: 2,
       title: 'Mileniumi Branding',
       category: 'design',
-      image: '/src/images/mileniumi/logoFinal.png',
+      image: mileniumiLogo,
       description: 'Complete brand identity and logo design for Mileniumi, showcasing modern aesthetics and versatile applications.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/mileniumi/logoFinal.png',
-        '/src/images/mileniumi/logoConstruction.png',
-        '/src/images/mileniumi/logoMockupNotebook.png',
-        '/src/images/mileniumi/watchLogoMockup.png'
+        mileniumiLogo,
+        mileniumiConstruction,
+        mileniumiNotebook,
+        mileniumiWatch
       ],
       technologies: ['Adobe Illustrator', 'Brand Identity', 'Logo Design']
     },
@@ -65,14 +127,14 @@ const Portfolio: React.FC = () => {
       id: 3,
       title: 'Blink Branding',
       category: 'design',
-      image: '/src/images/blink/logoWhite.jpg',
+      image: blinkWhite,
       description: 'Modern and versatile brand identity for Blink, featuring a clean logo design with both light and dark versions for various applications.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/blink/logoWhite.jpg',
-        '/src/images/blink/logoBlack.jpg',
-        '/src/images/blink/icon.jpg',
-        '/src/images/blink/visitcards.jpg'
+        blinkWhite,
+        blinkBlack,
+        blinkIcon,
+        blinkCards
       ],
       technologies: ['Adobe Illustrator', 'Brand Identity', 'Logo Design']
     },
@@ -80,13 +142,13 @@ const Portfolio: React.FC = () => {
       id: 4,
       title: 'GProject Branding & Website',
       category: 'design',
-      image: '/src/images/gproject/logo.png',
+      image: gprojectLogo,
       description: 'Complete brand identity and website design for GProject, a construction company with 34 years of family experience. The project included logo design, visual identity, and a modern website showcasing their services in project design, construction, and restoration.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/gproject/logo.png',
-        '/src/images/gproject/redlogo.jpg',
-        '/src/images/gproject/IMG_1152.jpeg'
+        gprojectLogo,
+        gprojectRed,
+        gprojectImg
       ],
       technologies: ['Adobe Illustrator', 'Brand Identity', 'Web Design', 'UI/UX', 'React']
     },
@@ -94,13 +156,13 @@ const Portfolio: React.FC = () => {
       id: 5,
       title: 'Gabe Nunez Portfolio',
       category: 'design',
-      image: '/src/images/gabenunez/page1.jpg',
+      image: gabePage1,
       description: 'A modern and visually striking portfolio website for Gabe Nunez, showcasing his work with a clean and professional design. The project features responsive layouts and interactive elements to enhance user engagement.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/gabenunez/page1.jpg',
-        '/src/images/gabenunez/page2.jpg',
-        '/src/images/gabenunez/page3.jpg'
+        gabePage1,
+        gabePage2,
+        gabePage3
       ],
       technologies: ['Web Design', 'UI/UX', 'Responsive Design', 'React']
     },
@@ -108,15 +170,15 @@ const Portfolio: React.FC = () => {
       id: 6,
       title: 'iPaymer Payment Platform',
       category: 'design',
-      image: '/src/images/ipaymer/ipaymer.png',
+      image: ipaymerLogo,
       description: 'A comprehensive UI/UX design for iPaymer, a modern payment platform. The project features a clean, intuitive interface with a focus on user experience and visual appeal, making financial transactions seamless and engaging.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/ipaymer/ipaymer.png',
-        '/src/images/ipaymer/ipaymer01.png',
-        '/src/images/ipaymer/ipaymer02.png',
-        '/src/images/ipaymer/ipaymer03.png',
-        '/src/images/ipaymer/page1.png'
+        ipaymerLogo,
+        ipaymer01,
+        ipaymer02,
+        ipaymer03,
+        ipaymerPage1
       ],
       technologies: ['UI/UX Design', 'Web Design', 'Payment Systems', 'Responsive Design']
     },
@@ -124,39 +186,39 @@ const Portfolio: React.FC = () => {
       id: 7,
       title: 'Morsix Dashboard Animation',
       category: 'animation',
-      image: '/src/animation/Morsix Dashboard Animation.mp4',
+      image: morsixVideo,
       description: 'Interactive dashboard animation demonstrating data visualization and user interface transitions.',
       hasVideo: true,
-      videoUrl: '/src/animation/Morsix Dashboard Animation.mp4',
+      videoUrl: morsixVideo,
       technologies: ['After Effects', 'UI/UX Animation', 'Motion Design']
     },
     {
       id: 8,
       title: 'Shwabo Commercial',
       category: 'animation',
-      image: '/src/animation/Shwabo - Trinken sie shwabo.mp4',
+      image: shwaboVideo,
       description: 'Creative commercial animation for Shwabo, featuring engaging visuals and brand storytelling.',
       hasVideo: true,
-      videoUrl: '/src/animation/Shwabo - Trinken sie shwabo.mp4',
+      videoUrl: shwaboVideo,
       technologies: ['After Effects', 'Commercial Animation', 'Brand Animation']
     },
     {
       id: 9,
       title: 'Media Awareness Campaign',
       category: 'animation',
-      image: '/src/animation/Titulli nuk eshte lajm! Fushate vetedijesuese ndaj keqinformimit te mediave dhe lajmeve te rreme..mp4',
+      image: mediaAwarenessVideo,
       description: 'Educational animation campaign about media misinformation and fake news awareness.',
       hasVideo: true,
-      videoUrl: '/src/animation/Titulli nuk eshte lajm! Fushate vetedijesuese ndaj keqinformimit te mediave dhe lajmeve te rreme..mp4',
+      videoUrl: mediaAwarenessVideo,
       technologies: ['After Effects', 'Educational Animation', 'Motion Graphics']
     },
     {
       id: 10,
       title: 'Birra Peroni - Pa Panik Plako!',
       category: 'animation',
-      image: '/src/animation/Birra Peroni - Pa Panik Plako!.mp4',
+      image: peroniVideo,
       hasVideo: true,
-      videoUrl: '/src/animation/Birra Peroni - Pa Panik Plako!.mp4',
+      videoUrl: peroniVideo,
       description: 'A dynamic animation for Birra Peroni\'s campaign, featuring the tagline \'Pa Panik Plako!\' with energetic motion graphics and brand elements.',
       technologies: ['After Effects', 'Motion Graphics', 'Brand Animation']
     },
@@ -164,9 +226,9 @@ const Portfolio: React.FC = () => {
       id: 11,
       title: 'German Embassy',
       category: 'animation',
-      image: '/src/animation/Animacioni për Ambasadën Gjermane - Tage der Deutschen Sprache Logo Animation.mp4',
+      image: germanEmbassyVideo,
       hasVideo: true,
-      videoUrl: '/src/animation/Animacioni për Ambasadën Gjermane - Tage der Deutschen Sprache Logo Animation.mp4',
+      videoUrl: germanEmbassyVideo,
       description: 'Logo animation for the German Embassy\'s language days event, showcasing elegant typography and cultural elements.',
       technologies: ['After Effects', 'Motion Graphics', 'Logo Design']
     },
@@ -174,14 +236,14 @@ const Portfolio: React.FC = () => {
       id: 12,
       title: 'Political Campaign Prishtina',
       category: 'design',
-      image: '/src/images/politicalCampaignPrishtina/thumbnailElection.png',
+      image: politicalThumb,
       description: 'Political campaign materials for Prishtina, including posters, social media content, and promotional materials.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/politicalCampaignPrishtina/thumbnailElection.png',
-        '/src/images/politicalCampaignPrishtina/02.png',
-        '/src/images/politicalCampaignPrishtina/03.png',
-        '/src/images/politicalCampaignPrishtina/stickers04.png'
+        politicalThumb,
+        political02,
+        political03,
+        politicalStickers
       ],
       technologies: ['Poster Design', 'Social Media', 'Promotional Materials']
     },
@@ -189,13 +251,13 @@ const Portfolio: React.FC = () => {
       id: 13,
       title: 'Product Campaign',
       category: 'design',
-      image: '/src/images/productCampaign/thumbnailProduct.png',
+      image: productThumb,
       description: 'Product campaign design featuring creative visuals and marketing materials.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/productCampaign/thumbnailProduct.png',
-        '/src/images/productCampaign/02.png',
-        '/src/images/productCampaign/03.png'
+        productThumb,
+        product02,
+        product03
       ],
       technologies: ['Product Design', 'Marketing', 'Brand Strategy']
     },
@@ -203,20 +265,20 @@ const Portfolio: React.FC = () => {
       id: 14,
       title: 'Grand Hotel',
       category: 'design',
-      image: '/src/images/grandhotel/thumbnail.jpg',
+      image: grandHotelThumb,
       description: 'A comprehensive branding project for Grand Hotel, including logo design, visual identity, and marketing materials.',
       hasGallery: true,
       galleryImages: [
-        '/src/images/grandhotel/Home-100.jpg',
-        '/src/images/grandhotel/5-100.jpg',
-        '/src/images/grandhotel/6-100.jpg',
-        '/src/images/grandhotel/7-100.jpg',
-        '/src/images/grandhotel/8-100.jpg',
-        '/src/images/grandhotel/9-100.jpg',
-        '/src/images/grandhotel/10-100.jpg',
-        '/src/images/grandhotel/Projects-100.jpg',
-        '/src/images/grandhotel/Studio          -100.jpg',
-        '/src/images/grandhotel/What we do-100.jpg'
+        grandHotelHome,
+        grandHotel5,
+        grandHotel6,
+        grandHotel7,
+        grandHotel8,
+        grandHotel9,
+        grandHotel10,
+        grandHotelProjects,
+        grandHotelStudio,
+        grandHotelWhat
       ],
       technologies: ['React', 'SCSS', 'Framer Motion']
     }
