@@ -116,10 +116,9 @@ $accent-color: #00BFFF; /* Light blue */
 
 .nav-button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
   background: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   width: 40px;
   height: 40px;
@@ -129,12 +128,9 @@ $accent-color: #00BFFF; /* Light blue */
   justify-content: center;
   cursor: pointer;
   font-size: 1.2rem;
-  transition: all 0.3s ease;
   z-index: 1000;
   
-  &:hover {
-    background: rgba(0, 0, 0, 0.9);
-  }
+ 
   
   &.prev {
     left: 1rem;

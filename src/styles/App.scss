@@ -27,7 +27,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  cursor: none !important;
 }
 
 body {
@@ -38,7 +37,6 @@ body {
   letter-spacing: 0.5px;
   font-weight: 400;
   overflow-x: hidden;
-  cursor: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: none !important;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
   &:hover {
@@ -66,7 +63,6 @@ a {
 }
 
 button {
-  cursor: none !important;
   border: none;
   outline: none;
   font-family: inherit;
@@ -234,7 +230,6 @@ img {
   .portfolio-item {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
-    cursor: none !important;
     transition: transform 0.3s ease, background-color 0.3s ease;
     color: var(--card-text); /* Dark text for white cards */
 
@@ -268,7 +263,6 @@ img {
     button {
       background: var(--primary-color);
       color: var(--text-color); /* White text for colored button */
-      cursor: none !important;
       &:hover {
         background: var(--hover-color);
         color: var(--primary-color); /* Dark pink text for white hover */
@@ -281,7 +275,6 @@ button,
 a,
 .portfolio-item,
 .contact-button {
-  cursor: none !important;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
   &:hover {

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import LoadingSpinner from './components/LoadingSpinner';
-import CustomCursor from './components/CustomCursor';
 import Footer from './components/Footer';
 import './styles/App.scss';
 
@@ -17,7 +16,6 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <CustomCursor />
         <Navbar />
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
